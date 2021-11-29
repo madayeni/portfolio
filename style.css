@@ -910,6 +910,7 @@ header nav a:hover {
 
 ul.proj-points {
   list-style-type: circle;
+  margin-left: 10px;
 }
 
 .proj-footer {
