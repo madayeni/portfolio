@@ -1020,6 +1020,7 @@ ul.proj-points {
 /* media queries */
 
 @media screen and (max-width: 768px) {
+  html,
   body {
     overflow-x: hidden;
   }
