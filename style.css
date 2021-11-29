@@ -51,6 +51,11 @@ section {
 .logo-png {
   width: 40px;
   height: 40px;
+  transition: all 0.4s ease;
+}
+
+.logo-png:hover {
+  transform: scale(1.2);
 }
 
 /* utils */
@@ -101,6 +106,11 @@ a.btn {
 .section-header {
   height: 50px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.section-header:hover {
+  color: black;
 }
 
 .section-content {
@@ -200,8 +210,10 @@ header a:focus {
   outline: none;
 }
 
-header a:hover {
+header nav a:hover {
   border-bottom: 2px var(--color) solid;
+  color: var(--color);
+  transition: all 0.3s ease-in;
 }
 
 .social-btn {
@@ -244,8 +256,16 @@ header a:hover {
   transform: translateY(10px);
 }
 
+.social-btn-links li {
+  transition: all 0.3s ease;
+}
+
 .social-btn:hover {
   background-color: gray;
+  transform: scale(0.9);
+}
+
+.social-btn-links li:hover {
   transform: scale(0.9);
 }
 
@@ -397,8 +417,9 @@ header a:hover {
 
 /* about */
 .about {
-  height: 450px;
+  min-height: 450px;
   background: #ffe0aa;
+  padding-bottom: 10px;
 }
 
 .about-card {
@@ -504,12 +525,21 @@ header a:hover {
 }
 
 .modal-content {
-  height: 35vh;
+  height: 40vh;
   width: 50%;
   background: white;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   z-index: 199;
   overflow-y: scroll;
+}
+
+.open-modal-btn {
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.open-modal-btn:hover {
+  transform: scale(0.9);
 }
 
 .close-modal {
@@ -852,6 +882,9 @@ header a:hover {
 
 .proj-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .proj-ref {
@@ -888,6 +921,13 @@ ul.proj-points {
   display: inline-block;
   padding: 5px 10px;
   margin-top: 10px;
+  transition: all 0.3s ease-in;
+}
+
+.proj-footer a:hover {
+  background-color: gray;
+  transform: scale(0.95);
+  color: white;
 }
 /* Contact */
 .contact-content {
@@ -909,6 +949,25 @@ ul.proj-points {
 
 .contact-content .flex i {
   margin: 20px;
+}
+
+.contact-content .left a {
+  color: inherit;
+}
+
+.contact-content .left a:hover {
+  color: black;
+}
+
+.send-btn {
+  display: block;
+  width: 70%;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  transform: scalex(0.9);
 }
 
 /* footer */
@@ -948,6 +1007,10 @@ ul.proj-points {
 
 .scroll i {
   color: #fff;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* media queries */
@@ -1057,11 +1120,6 @@ ul.proj-points {
     height: 70px;
     bottom: -20px;
     right: 20px;
-  }
-
-  .modal-content {
-    width: 85%;
-    height: 50vh;
   }
 
   .skill-card {
