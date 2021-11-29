@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="images/logo.png" type="image/png" />
       
     <link rel="stylesheet" href="style.css" />
@@ -136,7 +137,7 @@
           <h1>About me</h1>
         </div>
         <div class="flex section-content">
-          <div class="about-card">
+          <div class="about-card" data-aos="flip-left">
             <div class="card card-info">
               <li>>>> more than 10 years of experience in programming</li>
               <li>>>> master's degree from University of Toronto</li>
@@ -147,7 +148,7 @@
               </li>
             </div>
           </div>
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-left">
             <p class="lead">
               I obtained my Masters from University of Toronto in Electrical
               Engineering in 2020. I am passionate about software engineering
@@ -171,8 +172,8 @@
           <h1>Education</h1>
         </div>
         <div class="edu-content">
-          <div class="edu-line"></div>
-          <div class="left flex">
+          <div class="edu-line" data-aos="zoom-in"></div>
+          <div class="left flex" data-aos="fade-right">
             <div class="edu-info card">
               <div class="logo uoft"></div>
               <div class="flex header">
@@ -247,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="right flex">
+          <div class="right flex" data-aos="fade-left">
             <div class="edu-info card">
               <div class="logo ut"></div>
               <div class="flex header">
@@ -320,7 +321,7 @@
               </div>
             </div>
           </div>
-          <div class="left flex">
+          <div class="left flex" data-aos="fade-right">
             <div class="edu-info card">
               <div class="logo nodet"></div>
               <div class="flex header">
@@ -401,7 +402,7 @@
           <h1>Skills</h1>
         </div>
         <div class="skills-content">
-          <div class="card skill-card skill-card-lg">
+          <div class="card skill-card skill-card-lg" data-aos="fade-right">
             <h2>Technical</h2>
             <div class="bar">
               <h3 class="info">HTML</h3>
@@ -464,7 +465,7 @@
               </div>
             </div>
           </div>
-          <div class="card skill-card skill-card-sm">
+          <div class="card skill-card skill-card-sm" data-aos="fade-left">
             <h2>Libraries and Frameworks</h2>
             <div class="bar">
               <h3 class="info">React</h3>
@@ -491,7 +492,7 @@
               </div>
             </div>
           </div>
-          <div class="card skill-card skill-card-sm">
+          <div class="card skill-card skill-card-sm" data-aos="fade-left">
             <h2>Soft Skills</h2>
             <div class="bar">
               <h3 class="info">Communication</h3>
@@ -530,7 +531,7 @@
           <h1>Projects</h1>
         </div>
         <div class="proj-content">
-          <div class="card proj-card">
+          <div class="card proj-card" data-aos="fade-up">
             <div class="proj-title">Full Stack MERN Blog Application</div>
             <div class="proj-used">
               Used:
@@ -551,7 +552,7 @@
               <a href="#">Code</a>
             </div>
           </div>
-          <div class="card proj-card">
+          <div class="card proj-card" data-aos="fade-up">
             <div class="proj-title">PERN Music Selling Application</div>
             <div class="proj-used">
               Used:
@@ -571,7 +572,7 @@
               <a href="#">Code</a>
             </div>
           </div>
-          <div class="card proj-card">
+          <div class="card proj-card" data-aos="fade-up">
             <div class="proj-title">Sorting Visualizer</div>
             <div class="proj-used">
               Used:
@@ -591,7 +592,7 @@
               <a href="#">Code</a>
             </div>
           </div>
-          <div class="card proj-card">
+          <div class="card proj-card" data-aos="fade-up">
             <div class="proj-title">Puzzle Game Package</div>
             <div class="proj-used">
               Used:
@@ -620,7 +621,7 @@
           <h1>Contact</h1>
         </div>
         <div class="contact-content flex">
-          <div class="left">
+          <div class="left" data-aos="fade-right">
             <p class="lead">
               Feel free to contact me however it's convenient for you.
             </p>
@@ -649,7 +650,7 @@
               </h2>
             </div>
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <div class="card">
               <form class="form-group" data-netlify="true">
                 <div class="form-control">
@@ -691,7 +692,10 @@
       <p>Designed and Created by Kasra Madayeni</p>
       <p>&copy; 2021 | All Rights Reserved</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 120, duration: 400 });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
