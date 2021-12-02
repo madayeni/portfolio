@@ -26,8 +26,8 @@ const closeModal = (e) => {
 const closeModalOut = (e) => {
   if (e.target.classList.contains("modal")) {
     e.target.classList.remove("show");
+    document.body.classList.remove("no-scroll");
   }
-  document.body.classList.remove("no-scroll");
 };
 
 const toggleHandler = () => {
