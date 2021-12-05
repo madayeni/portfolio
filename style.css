@@ -202,7 +202,7 @@ header ul {
 }
 
 header li {
-  padding: 10 px;
+  padding: 10px;
   margin: 0 10px;
 }
 
@@ -221,18 +221,23 @@ header nav a:hover {
 }
 
 .social-btn {
-  border-radius: 10px;
-  padding: 8px;
-  background: rgba(255, 84, 63, 0.8);
   z-index: 100;
+  transition: all 0.3s ease;
   position: relative;
+  display: inline-block;
+}
+
+.social-btn .drop-btn {
+  background: rgba(255, 84, 63, 0.8);
+  font-size: 16px;
+  color: var(--mainColor);
+  padding: 8px;
+  width: 32px;
+  height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--mainColor);
   cursor: pointer;
-  font-size: 12px;
-  transition: all 0.3s ease;
 }
 
 .social-btn-links {
@@ -240,37 +245,37 @@ header nav a:hover {
   background: var(--mainColor);
   flex-direction: column;
   height: auto;
-  gap: 10px;
-  padding: 10px;
   position: absolute;
-  left: 0;
-  top: 0;
-  margin-top: 30px;
+  right: 0;
   box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   opacity: 0;
   visibility: none;
   pointer-events: none;
   transition: all 0.4s ease;
+  transform: translateY(-10px);
 }
 
-.social-btn:hover ul {
+.social-btn:hover .social-btn-links {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(10px);
+  transform: translateY(0);
 }
 
 .social-btn-links li {
   transition: all 0.3s ease;
+  padding: 10px 15px;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
 }
 
-.social-btn:hover {
+.social-btn:hover .drop-btn {
   background-color: gray;
-  transform: scale(0.9);
 }
 
 .social-btn-links li:hover {
-  transform: scale(0.9);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .hamburger {
@@ -306,7 +311,7 @@ header nav a:hover {
 
 /* social links */
 
-.social-links {
+/* .social-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,17 +328,17 @@ header nav a:hover {
   top: 33%;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
-.social-links::before,
+/* .social-links::before,
 .social-links::after {
   content: "";
   height: 50px;
   border: 1px rgba(0, 0, 0, 0.5) solid;
   width: 0;
-}
+} */
 
-.social-links a i {
+/* .social-links a i {
   margin: 10px 0;
 }
 
@@ -347,7 +352,7 @@ header nav a:hover {
 
 .social-links a:nth-child(3) {
   color: #4285f4;
-}
+} */
 
 /* hero */
 
@@ -1125,9 +1130,9 @@ ul.proj-points {
     }
   }
 
-  .social-links-fixed {
+  /* .social-links-fixed {
     display: none;
-  }
+  } */
 
   .about,
   .edu,
