@@ -537,7 +537,7 @@ header nav a:hover {
 }
 
 .edu-info .logo.nodet {
-  background: url("images/sampad.svg");
+  background: url("images/nodet.svg");
   background-size: 100px;
   background-repeat: no-repeat;
 }
@@ -1210,7 +1210,7 @@ ul.proj-points {
   }
 
   .edu-info .logo.nodet {
-    background: url("images/sampad.svg");
+    background: url("images/nodet.svg");
     background-size: 70px;
     background-repeat: no-repeat;
   }
