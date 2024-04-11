@@ -481,14 +481,9 @@ header nav a:hover {
   line-height: 1.5rem;
 }
 
-.card-info {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(1, 1fr);
-}
-
 .card-info li {
   list-style: none;
+  margin-bottom: 20px;
 }
 
 /* Education */
