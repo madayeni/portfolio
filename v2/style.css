@@ -627,10 +627,12 @@ header nav a:hover {
   margin-top: 30px;
 }
 .skills-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  width: 40%;
 }
 
 .skills-content .skill-card h2 {
@@ -644,10 +646,6 @@ header nav a:hover {
 
 .skill-card h3 {
   font-size: 16px;
-}
-
-.skill-card-lg {
-  grid-row: 1 / span 2;
 }
 
 .skill-card-lg .bar {
@@ -679,11 +677,11 @@ header nav a:hover {
 }
 
 .skill-card .bar .html .progress {
-  width: 90%;
+  width: 95%;
 }
 
 .skill-card .bar .css .progress {
-  width: 75%;
+  width: 85%;
 }
 
 .skill-card .bar .js .progress {
@@ -695,7 +693,7 @@ header nav a:hover {
 }
 
 .skill-card .bar .cpp .progress {
-  width: 60%;
+  width: 65%;
 }
 
 .skill-card .bar .java .progress {
@@ -710,8 +708,12 @@ header nav a:hover {
   width: 80%;
 }
 
-.skill-card .bar .tw .progress {
+.skill-card .bar .twk .progress {
   width: 85%;
+}
+
+.skill-card .bar .twnd .progress {
+  width: 75%;
 }
 
 .skill-card .bar .ps .progress {
@@ -719,15 +721,15 @@ header nav a:hover {
 }
 
 .skill-card .bar .sql .progress {
-  width: 80%;
+  width: 90%;
 }
 
 .skill-card .bar .nsql .progress {
-  width: 70%;
+  width: 85%;
 }
 
 .skill-card .bar .njs .progress {
-  width: 65%;
+  width: 90%;
 }
 
 .skill-card .bar .react .progress {
@@ -735,19 +737,55 @@ header nav a:hover {
 }
 
 .skill-card .bar .ex .progress {
-  width: 70%;
+  width: 85%;
 }
 
 .skill-card .bar .bs .progress {
-  width: 75%;
-}
-
-.skill-card .bar .fl .progress {
-  width: 50%;
+  width: 80%;
 }
 
 .skill-card .bar .mat .progress {
   width: 80%;
+}
+
+.skill-card .bar .nextjs .progress {
+  width: 80%;
+}
+
+.skill-card .bar .fastify .progress {
+  width: 75%;
+}
+
+.skill-card .bar .django .progress {
+  width: 70%;
+}
+
+.skill-card .bar .rest-api .progress {
+  width: 90%;
+}
+
+.skill-card .bar .gql .progress {
+  width: 85%;
+}
+
+.skill-card .bar .docker .progress {
+  width: 80%;
+}
+
+.skill-card .bar .aws .progress {
+  width: 80%;
+}
+
+.skill-card .bar .azure .progress {
+  width: 80%;
+}
+
+.skill-card .bar .kafka .progress {
+  width: 75%;
+}
+
+.skill-card .bar .git .progress {
+  width: 90%;
 }
 
 .skill-card .bar .progress-line::before {
@@ -776,21 +814,21 @@ header nav a:hover {
 }
 
 .skill-card .bar .html::before {
-  content: "90%";
-  left: 90%;
+  content: "95%";
+  left: 95%;
 }
 
 .skill-card .bar .html::after {
-  left: 90%;
+  left: 95%;
 }
 
 .skill-card .bar .css::before {
-  content: "75%";
-  left: 75%;
+  content: "85%";
+  left: 85%;
 }
 
 .skill-card .bar .css::after {
-  left: 75%;
+  left: 85%;
 }
 
 .skill-card .bar .js::before {
@@ -812,12 +850,12 @@ header nav a:hover {
 }
 
 .skill-card .bar .cpp::before {
-  content: "60%";
-  left: 60%;
+  content: "65%";
+  left: 65%;
 }
 
 .skill-card .bar .cpp::after {
-  left: 60%;
+  left: 65%;
 }
 
 .skill-card .bar .java::before {
@@ -848,12 +886,12 @@ header nav a:hover {
 }
 
 .skill-card .bar .njs::before {
-  content: "65%";
-  left: 65%;
+  content: "90%";
+  left: 90%;
 }
 
 .skill-card .bar .njs::after {
-  left: 65%;
+  left: 90%;
 }
 
 .skill-card .bar .cm::before {
@@ -874,12 +912,21 @@ header nav a:hover {
   left: 80%;
 }
 
-.skill-card .bar .tw::before {
+.skill-card .bar .twnd::before {
+  content: "75%";
+  left: 75%;
+}
+
+.skill-card .bar .twnd::after {
+  left: 75%;
+}
+
+.skill-card .bar .twk::before {
   content: "85%";
   left: 85%;
 }
 
-.skill-card .bar .tw::after {
+.skill-card .bar .twk::after {
   left: 85%;
 }
 
@@ -902,21 +949,21 @@ header nav a:hover {
 }
 
 .skill-card .bar .ex::before {
-  content: "70%";
-  left: 70%;
+  content: "85%";
+  left: 85%;
 }
 
 .skill-card .bar .ex::after {
-  left: 70%;
+  left: 85%;
 }
 
 .skill-card .bar .bs::before {
-  content: "75%";
-  left: 75%;
+  content: "80%";
+  left: 80%;
 }
 
 .skill-card .bar .bs::after {
-  left: 75%;
+  left: 80%;
 }
 
 .skill-card .bar .fl::before {
@@ -935,6 +982,96 @@ header nav a:hover {
 
 .skill-card .bar .mat::after {
   left: 80%;
+}
+
+.skill-card .bar .nextjs::before {
+  content: "80%";
+  left: 80%;
+}
+
+.skill-card .bar .nextjs::after {
+  left: 80%;
+}
+
+.skill-card .bar .fastify::before {
+  content: "75%";
+  left: 75%;
+}
+
+.skill-card .bar .fastify::after {
+  left: 75%;
+}
+
+.skill-card .bar .django::before {
+  content: "70%";
+  left: 70%;
+}
+
+.skill-card .bar .django::after {
+  left: 70%;
+}
+
+.skill-card .bar .rest-api::before {
+  content: "90%";
+  left: 90%;
+}
+
+.skill-card .bar .rest-api::after {
+  left: 90%;
+}
+
+.skill-card .bar .gql::before {
+  content: "85%";
+  left: 85%;
+}
+
+.skill-card .bar .gql::after {
+  left: 85%;
+}
+
+.skill-card .bar .docker::before {
+  content: "80%";
+  left: 80%;
+}
+
+.skill-card .bar .docker::after {
+  left: 80%;
+}
+
+.skill-card .bar .aws::before {
+  content: "80%";
+  left: 80%;
+}
+
+.skill-card .bar .aws::after {
+  left: 80%;
+}
+
+.skill-card .bar .azure::before {
+  content: "80%";
+  left: 80%;
+}
+
+.skill-card .bar .azure::after {
+  left: 80%;
+}
+
+.skill-card .bar .kafka::before {
+  content: "75%";
+  left: 75%;
+}
+
+.skill-card .bar .kafka::after {
+  left: 75%;
+}
+
+.skill-card .bar .git::before {
+  content: "90%";
+  left: 90%;
+}
+
+.skill-card .bar .git::after {
+  left: 90%;
 }
 
 /* Projects */
@@ -1258,7 +1395,7 @@ ul.proj-points {
   }
 
   .skills-content .skill-card-lg {
-    grid-row: 1;
+    width: 100%;
   }
 
   .proj-content {
