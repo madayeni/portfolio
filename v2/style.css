@@ -868,21 +868,21 @@ header nav a:hover {
 }
 
 .skill-card .bar .sql::before {
-  content: "80%";
-  left: 80%;
+  content: "90%";
+  left: 90%;
 }
 
 .skill-card .bar .sql::after {
-  left: 80%;
+  left: 90%;
 }
 
 .skill-card .bar .nsql::before {
-  content: "70%";
-  left: 70%;
+  content: "85%";
+  left: 85%;
 }
 
 .skill-card .bar .nsql::after {
-  left: 70%;
+  left: 85%;
 }
 
 .skill-card .bar .njs::before {
