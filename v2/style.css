@@ -693,11 +693,11 @@ header nav a:hover {
 }
 
 .skill-card .bar .cpp .progress {
-  width: 65%;
+  width: 75%;
 }
 
 .skill-card .bar .java .progress {
-  width: 65%;
+  width: 85%;
 }
 
 .skill-card .bar .cm .progress {
@@ -714,6 +714,14 @@ header nav a:hover {
 
 .skill-card .bar .twnd .progress {
   width: 75%;
+}
+
+.skill-card .bar .spb .progress {
+  width: 85%;
+}
+
+.skill-card .bar .ang .progress {
+  width: 80%;
 }
 
 .skill-card .bar .ps .progress {
@@ -850,21 +858,39 @@ header nav a:hover {
 }
 
 .skill-card .bar .cpp::before {
-  content: "65%";
-  left: 65%;
+  content: "75%";
+  left: 75%;
 }
 
 .skill-card .bar .cpp::after {
-  left: 65%;
+  left: 75%;
 }
 
 .skill-card .bar .java::before {
-  content: "65%";
-  left: 65%;
+  content: "85%";
+  left: 85%;
 }
 
 .skill-card .bar .java::after {
-  left: 65%;
+  left: 85%;
+}
+
+.skill-card .bar .spb::before {
+  content: "85%";
+  left: 85%;
+}
+
+.skill-card .bar .spb::after {
+  left: 85%;
+}
+
+.skill-card .bar .ang::before {
+  content: "80%";
+  left: 80%;
+}
+
+.skill-card .bar .ang::after {
+  left: 80%;
 }
 
 .skill-card .bar .sql::before {
